@@ -11,7 +11,7 @@ export const Todolist = ({ task, deleteTodo, editTodo }) => {
   };
 
   return (
-    <div className={`Todo${completed ? "completed" : "unfinished"}`}>
+    <div className={`Todo${completed ? " completed" : " unfinished"}`}>
       <div className="complete-button" onClick={toggleComplete}>
         <FontAwesomeIcon icon={completed ? faCircle : farCircle} />
       </div>
