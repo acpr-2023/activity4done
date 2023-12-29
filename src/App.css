@@ -1,38 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("./images/bgg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #ff3838;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Wrapper {
+  background: white;
+  margin-top: 5rem;
+  padding: 4rem;
+  border-radius: 50px;
+  text-align: center; /* Center the content within Wrapper */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* UpdateForm.css */
+.Form {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.input {
+  outline: none;
+  background: #ffc5c5;
+  border: 0.5px solid #ffc5c5;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #ff3838;
+}
+
+.input_btn {
+  background: #ff3838;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.Todo {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #272525;
+  color: #ff3838;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font-size: large;
+  border-radius: 7px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.complete-button {
+  border: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed {
+  text-decoration: line-through;
+}
+
+.unfinished .complete-button {
+  color: #fff; /* Change to your desired color */
+}
+
+.completed .complete-button {
+  color: #ff3838; /* Change to your desired color */
+}
+
+.update_btn {
+  background: #ffc5c5;
+  color: #ff3838;
+  border: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  margin-right: 10px; /* Adjust the margin as needed */
+  border-radius: 2px;
+}
+
+.del_btn {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  margin-right: 10px; /* Adjust the margin as needed */
+  border-radius: 2px;
+  margin-top: 20px;
 }
