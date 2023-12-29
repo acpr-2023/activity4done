@@ -7,14 +7,14 @@ import { UpdateForm } from "./UpdateForm";
 export const Wrapper = () => {
   const [todos, setTodos] = useState([]);
 
-  const addTodo= (todo) => {
+  const addTodo = (todo) => {
     setTodos([
       ...todos,
       { id: uuidv4(), task: todo, completed: false, isEditing: false },
     ]);
   };
 
-  const deleteTodo= (id) => setTodos(todos.filter((todo) => todo.id !== id));
+  const deleteTodo = (id) => setTodos(todos.filter((todo) => todo.id !== id));
 
   const toggleComplete = (id) => {
     setTodos(
@@ -24,7 +24,7 @@ export const Wrapper = () => {
     );
   };
 
-  const editTodo= (id) => {
+  const editTodo = (id) => {
     setTodos(
       todos.map((todo) =>
         todo.id === id ? { ...todo, isEditing: !todo.isEditing } : todo

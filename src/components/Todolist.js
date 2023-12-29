@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { faCircle as farCircle } from "@fortawesome/free-solid-svg-icons";
 
-export const Todolist = ({ task, deleteTodo, editTodo}) => {
+export const Todolist = ({ task, deleteTodo, editTodo }) => {
   const [completed, setCompleted] = useState(task.completed);
 
   const toggleComplete = () => {

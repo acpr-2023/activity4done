@@ -18,7 +18,7 @@ export const UpdateForm = ({ editTodo, task }) => {
         placeholder="Update task"
       />
       <button type="submit" className="input_btn">
-        Update 
+        Update
       </button>
     </form>
   );

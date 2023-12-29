@@ -38,10 +38,9 @@ h1 {
   margin-top: 5rem;
   padding: 4rem;
   border-radius: 50px;
-  text-align: center; /* Center the content within Wrapper */
+  text-align: center;
 }
 
-/* UpdateForm.css */
 .Form {
   width: 100%;
   margin-bottom: 1rem;
@@ -87,25 +86,13 @@ h1 {
   color: #fff;
 }
 
-.completed {
-  text-decoration: line-through;
-}
-
-.unfinished .complete-button {
-  color: #fff; /* Change to your desired color */
-}
-
-.completed .complete-button {
-  color: #ff3838; /* Change to your desired color */
-}
-
 .update_btn {
   background: #ffc5c5;
   color: #ff3838;
   border: none;
   padding: 0.2rem;
   cursor: pointer;
-  margin-right: 10px; /* Adjust the margin as needed */
+  margin-right: 10px;
   border-radius: 2px;
 }
 
@@ -118,4 +105,16 @@ h1 {
   margin-right: 10px; /* Adjust the margin as needed */
   border-radius: 2px;
   margin-top: 20px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.unfinished .complete-button {
+  color: #fff;
+}
+
+.completed .complete-button {
+  color: #ff3838;
 }
